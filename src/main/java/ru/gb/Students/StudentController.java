@@ -28,7 +28,7 @@ public class StudentController {
     public List<Student> getStudentListByName(@PathVariable String name) {
         return repo.getListByName(name);
     }
-    @GetMapping(value = "/groupName/{groupName}")
+    @GetMapping(value = "/groupName/{groupName}/student")
     public List<Student> getStudentListByGroupName(@PathVariable String groupName) {
         return repo.getListByGroupName(groupName);
     }
